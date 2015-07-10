@@ -65,7 +65,7 @@ Target "Generate" (fun _ ->
 
     let buildSite (updateTagArchive) =
         let dependencies = [ yield! Directory.GetFiles(layouts) ] 
-        let noModel = { Model.Root = root; MonthlyPosts = [||]; Posts = [||]; TaglyPosts = [||]; GenerateAll = true }
+        let noModel = { Model.Root = root; MonthlyPosts = [||]; Posts = [||]; TaglyPosts = [||]; GenerateAll = true ; Title="Jet Technology"}
         let razor = FsBlogLib.Razor(layouts, Model = noModel)
         let model = LoadModel(tagRenames, TransformAsTemp (template, source) razor, root, blog)
 
