@@ -3,7 +3,7 @@
 # ----------------------- #
 
 url: http://jet.github.io/FsBlog
-gitlocation: https://github.com/jet/FsBlog/FsBlog.git
+gitlocation: https://github.com/jet/FsBlog.git
 gitbranch: gh-pages
 title: Welcome to Jet Technology
 description: This is the Jet Technology blog
