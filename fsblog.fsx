@@ -160,6 +160,7 @@ Target "GitPublish" (fun _ ->
     CommandHelper.runSimpleGitCommand deploy "add ." |> printfn "%s"
     let cmd = sprintf """commit -a -m "Update generated web site (%s)" """ (DateTime.Now.ToString("dd MMMM yyyy"))
     CommandHelper.runSimpleGitCommand deploy cmd |> printfn "%s"
+    CommandHelper.runSimpleGitCommand deploy "remote -v" |> printfn "%s"
     Branches.push deploy
 )
 
