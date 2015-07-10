@@ -1,9 +1,9 @@
 @{
     Layout = "post";
-    Title = "Hello, FsBlog!";
+    Title = "Hello, Jet tech Blog!";
     Date = "2013-11-08T11:27:31";
     Tags = "";
-    Description = "Introducing FsBlog - a blog-aware static site generator using F#.";
+    Description = "welcome to jet tech blog";
 }
 
 **FsBlog** aims to be a blog-aware static site generator, mostly built in `F#` for .NET and Mono developers. 

@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://localhost:8080/FsBlog
+url: http://jet.github.io/FsBlog
 gitlocation: https://github.com/jet/FsBlog/FsBlog.git
 gitbranch: gh-pages
 title: Welcome to Jet Technology
