@@ -4,21 +4,23 @@
     <link>http://jet.github.io/FsBlog</link>
     <description>This is the Jet Technology blog</description>
     <item>
-      <title>Getting Started</title>
-      <guid>http://jet.github.io/FsBlog/blog/2013/11-09-getting-started</guid>
-      <link>http://jet.github.io/FsBlog/blog/2013/11-09-getting-started/index.html</link>
-      <pubDate>Sat, 09 Nov 2013 17:38:14 GMT</pubDate>
-      <description>&lt;p&gt;If you've much experience with other static site generators like &lt;em&gt;Octopress&lt;/em&gt; or &lt;em&gt;Jekyll&lt;/em&gt; most of this should be fairly familiar, if not, hopefully it won't be too difficult to pick up. Oh hai.&lt;/p&gt;
+      <title>Jet sponsors the F# Software Foundation!</title>
+      <guid>http://jet.github.io/FsBlog/blog/2015/01-12-jet-sponsors-FSSF</guid>
+      <link>http://jet.github.io/FsBlog/blog/2015/01-12-jet-sponsors-FSSF/index.html</link>
+      <pubDate>Mon, 12 Jan 2015 16:27:31 GMT</pubDate>
+      <description>&lt;h2&gt;What is the F# Software Foundation?&lt;/h2&gt;
+
+&lt;p&gt;The F# Software Foundation is a community-run non-profit Corporation that aims to promote and benefit the F# Programming Language. It began in 2012, and was organized formally into a non-profit in late 2014.&lt;/p&gt;
 
 
 </description>
     </item>
     <item>
-      <title>Hello, Jet tech Blog!</title>
-      <guid>http://jet.github.io/FsBlog/blog/2013/11-08-hello-fsblog</guid>
-      <link>http://jet.github.io/FsBlog/blog/2013/11-08-hello-fsblog/index.html</link>
-      <pubDate>Fri, 08 Nov 2013 16:27:31 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;FsBlog&lt;/strong&gt; aims to be a blog-aware static site generator, mostly built in &lt;code&gt;F#&lt;/code&gt; for .NET and Mono developers.&lt;/p&gt;
+      <title>Getting Started</title>
+      <guid>http://jet.github.io/FsBlog/blog/2013/11-09-getting-started</guid>
+      <link>http://jet.github.io/FsBlog/blog/2013/11-09-getting-started/index.html</link>
+      <pubDate>Sat, 09 Nov 2013 17:38:14 GMT</pubDate>
+      <description>&lt;p&gt;If you've much experience with other static site generators like &lt;em&gt;Octopress&lt;/em&gt; or &lt;em&gt;Jekyll&lt;/em&gt; most of this should be fairly familiar, if not, hopefully it won't be too difficult to pick up. Oh hai.&lt;/p&gt;
 
 
 </description>
