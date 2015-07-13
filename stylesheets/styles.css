@@ -247,8 +247,7 @@ footer {
 	margin: 0;
     padding: 1% 2%;
     float: right;
-	font: Genericons;
-    font-size: 32px;
+	font: normal 32px/1 Genericons;
     font-weight: 400;
     display:block;
     min-height: 40px;
