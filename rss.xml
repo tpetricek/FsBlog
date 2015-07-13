@@ -1,8 +1,22 @@
 <rss version="2.0">
   <channel>
-    <title>Welcome to Jet Technology</title>
+    <title>Welcome to Jet Tech blog.</title>
     <link>http://jet.github.io/FsBlog</link>
     <description>This is the Jet Technology blog</description>
+    <item>
+      <title>On how Jet chose F#</title>
+      <guid>http://jet.github.io/FsBlog/blog/2015/03-22-on-how-jet-chose</guid>
+      <link>http://jet.github.io/FsBlog/blog/2015/03-22-on-how-jet-chose/index.html</link>
+      <pubDate>Sun, 22 Mar 2015 16:38:14 GMT</pubDate>
+      <description>&lt;h2&gt;In the beginning&lt;/h2&gt;
+
+&lt;p&gt;When Jet first started, we weren't sure if we wanted to use F# or C#. Most of our original developers had only C# experience and, despite the benefits you often hear about F# -- less code leading to fewer bugs, for example -- we weren't sure that would be enough. After all, we're building an e-commerce web site, and isn't web fully in the domain of C#? Plus, most of the developers on the team had an object-oriented or imperative background -- what if we wasted too much time figuring out this new language before we could even be productive?&lt;/p&gt;
+
+&lt;p&gt;So, we started with two solutions: a C# solution and an F# solution, to see where they would take us. In the end, we chose to stick with the F# path. The main reason is that we were able to deliver the same functionality with far less code. This clearly eases maintainability and reduces bugs. If you've been part of the F# community for any length of time, you know that this is a very well known feature of F#, and a commonly cited reason to switch to F#. However, we had a few other unique to Jet reasons that we wanted to share.&lt;/p&gt;
+
+
+</description>
+    </item>
     <item>
       <title>Jet sponsors the F# Software Foundation!</title>
       <guid>http://jet.github.io/FsBlog/blog/2015/01-12-jet-sponsors-FSSF</guid>
@@ -12,15 +26,7 @@
 
 &lt;p&gt;The F# Software Foundation is a community-run non-profit Corporation that aims to promote and benefit the F# Programming Language. It began in 2012, and was organized formally into a non-profit in late 2014.&lt;/p&gt;
 
-
-</description>
-    </item>
-    <item>
-      <title>Getting Started</title>
-      <guid>http://jet.github.io/FsBlog/blog/2013/11-09-getting-started</guid>
-      <link>http://jet.github.io/FsBlog/blog/2013/11-09-getting-started/index.html</link>
-      <pubDate>Sat, 09 Nov 2013 17:38:14 GMT</pubDate>
-      <description>&lt;p&gt;If you've much experience with other static site generators like &lt;em&gt;Octopress&lt;/em&gt; or &lt;em&gt;Jekyll&lt;/em&gt; most of this should be fairly familiar, if not, hopefully it won't be too difficult to pick up. Oh hai.&lt;/p&gt;
+&lt;p&gt;For more information on the Foundation, including additional &lt;a href="http://foundation.fsharp.org/history"&gt;history&lt;/a&gt;, or to read the &lt;a href="http://foundation.fsharp.org/"&gt;mission statement&lt;/a&gt; and latest &lt;a href="http://foundation.fsharp.org/board_meeting_minutes"&gt;board meeting minutes&lt;/a&gt; of the F# Software Foundation, see the &lt;a href="http://fsharp.org"&gt;fsharp.org&lt;/a&gt; site.&lt;/p&gt;
 
 
 </description>

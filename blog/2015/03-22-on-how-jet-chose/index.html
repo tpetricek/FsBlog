@@ -1,0 +1,189 @@
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Welcome to Jet Technology</title>
+    <link rel="stylesheet" href="http://jet.github.io/FsBlog/stylesheets/styles.css">
+    <link rel="stylesheet" href="http://jet.github.io/FsBlog/stylesheets/pygment_trac.css">
+    <link rel="shortcut icon" href="http://jet.github.io/FsBlog/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- FSharp.Formatting Styles -->
+  	<link rel="stylesheet" type="text/css" media="screen" href="http://jet.github.io/FsBlog/fsharp.formatting/tooltips.css" />
+  	<script type="text/javascript" src="http://jet.github.io/FsBlog/fsharp.formatting/tooltips.js"></script>
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  </head>
+  <body>
+	  <header>
+        <div class="logo">
+            <a href="http://jet.github.io/FsBlog/index.html"><img src="http://jet.github.io/FsBlog/images/jet_logo.png" /></a>
+            <br />
+            <h3>Welcome to Jet Technology</h3>
+        </div>
+        <div class="social">
+            <ul>
+                <li>
+                    <a href="https://twitter.com/jettechnology"></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/jet"></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/jet"></a>
+                </li>
+                <li>
+                    <a href="https://www.github.com/jet"></a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com/company/jet-com"></a>
+                </li>
+                <li>
+                    <a href="https://plus.google.com/118328800025960082059/posts"></a>
+                </li>
+            </ul>
+            <br />
+            <p class="sitelink"><a href="http://jet.com">visit Jet.com</a></p>
+        </div>
+      </header>
+          <leftpanel>
+                  <h2>Jet is hiring!</h2>
+                  <p>
+                      <a href="http://careers.stackoverflow.com/jobs/employer/Jet.com">StackOverflow Careers</a><br />
+                      <a href="https://www.linkedin.com/vsearch/j?page_num=1&keywords=Jet%2Ecom&locationType=Y&f_C=5268907&trk=careers_promo_module_see_jobs">LinkedIn Jobs</a>
+                  </p>
+                    </leftpanel>
+      <section>
+		    
+<h1>On how Jet chose F#</h1>
+
+<h2>In the beginning</h2>
+
+<p>When Jet first started, we weren't sure if we wanted to use F# or C#. Most of our original developers had only C# experience and, despite the benefits you often hear about F# -- less code leading to fewer bugs, for example -- we weren't sure that would be enough. After all, we're building an e-commerce web site, and isn't web fully in the domain of C#? Plus, most of the developers on the team had an object-oriented or imperative background -- what if we wasted too much time figuring out this new language before we could even be productive?</p>
+
+<p>So, we started with two solutions: a C# solution and an F# solution, to see where they would take us. In the end, we chose to stick with the F# path. The main reason is that we were able to deliver the same functionality with far less code. This clearly eases maintainability and reduces bugs. If you've been part of the F# community for any length of time, you know that this is a very well known feature of F#, and a commonly cited reason to switch to F#. However, we had a few other unique to Jet reasons that we wanted to share.</p>
+
+<!--more-->
+
+<h2>The user groups &amp; start-up scene</h2>
+
+<p>In general, the developers who attend user groups do so because they are passionate about a certain technology, and they want to learn more by engaging and networking with the local community. This is true of most of the user groups I've attended. But, as we looked at F# user groups -- both locally in New York City and worldwide -- we realized something important: the number of attendees who were full-time F# developers was significantly lower than for other functional user groups.</p>
+
+<p>Those of us who attend the F# user groups are not doing so to learn new tools for our day jobs, we're attending as hobbyists whose day jobs require other languages. We're driven by our passion for learning, for the language, and for the community, but a frustrating inability in many cases to work with the language and community about which we're so passionate. It struck us at Jet that these are exactly the types of engineers that any company would want to hire.</p>
+
+<p>Personally, as a developer, Jet is exactly the kind of company that I was looking to work for: a company that is passionate about technology and one that wants to invest in and build both our own developers, and the local community, as the company grows.</p>
+
+<p>In the same vein: as we looked around at the start-up scene in New York City, we noticed a surprising lack of start-ups betting on F#. The Scala and Clojure communities (for example), while larger to be sure, were no less passionate about their respective languages, and each community had several start-ups competing with each other over top developers. Less competition over top developers only meant good things for Jet.</p>
+
+<h2>Code</h2>
+
+<h3>Aspect-oriented programming</h3>
+
+<p>Like many large-scale projects, we needed a way to handle validation, logging, and other cross-cutting concerns. Traditionally in MVC, this is done through the use of Action Filters. To apply a filter to a single function (or a controller), you would simply decorate it with the relevant attribute. ASP.NET will then inject an extra call before your function call to handle authorization.</p>
+
+<p>For example, to ensure authorization for an entire controller named MyController, you could use the following code:</p>
+
+<table class="pre"><tr><td class="lines"><pre class="fssnip">
+<span class="l">1: </span>
+<span class="l">2: </span>
+<span class="l">3: </span>
+<span class="l">4: </span>
+</pre>
+</td>
+<td class="snippet"><pre class="fssnip">
+<span class="k">public</span> <span class="k">class</span> <span class="i">MyController</span>
+{
+    <span class="o">..</span><span class="o">.</span>
+}</pre>
+</td>
+</tr>
+</table>
+
+<p>An extremely similar implementation occurs for Web API: using attributes to inject an extra function call before your function. Other frameworks also utilize similar approaches. However, in Jet's case, we needed this same ability to handle cross-cutting concerns for services <strong>not</strong> based on HTTP. Unfortunately, after several attempts, we discovered this would prove extremely difficult to do in a generic way. Once we began to look to F#, we realized we would be able to cover our needs easily. As a bonus, we found we could do it in a way that neither populates the codebase with fabricated interfaces, nor requires adapting a specific architecture. And so we introduce:</p>
+
+<h3>Jet's Filter Module</h3>
+
+<p>In our filters module, rather than using attributes, we take a much more functional and composable approach to AOP. Any filter in our module can be used to decorate functions that have type <code>'Input -&gt; Async&lt;'Output&gt;</code>, and all filters in our module are composable, using our andThen operation, like so:
+    let compositeFilter = filter1 |> Filter.andThen filter2</p>
+
+<p>For example, if you had a service that simply echoes its output:</p>
+
+<table class="pre"><tr><td class="lines"><pre class="fssnip">
+<span class="l">1: </span>
+</pre>
+</td>
+<td class="snippet"><pre class="fssnip">
+<span class="k">let</span> <span class="i">echoService</span> <span class="o">:</span> <span class="i">Service</span><span class="o">&lt;</span><span onmouseout="hideTip(event, 'fs1', 1)" onmouseover="showTip(event, 'fs1', 1)" class="i">string</span>, <span onmouseout="hideTip(event, 'fs1', 2)" onmouseover="showTip(event, 'fs1', 2)" class="i">string</span><span class="o">&gt;</span> <span class="o">=</span> <span class="k">fun</span> <span class="i">str</span> <span class="k">-&gt;</span> <span onmouseout="hideTip(event, 'fs2', 3)" onmouseover="showTip(event, 'fs2', 3)" class="i">async</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs3', 4)" onmouseover="showTip(event, 'fs3', 4)" class="i">Return</span> <span class="i">str</span></pre>
+</td>
+</tr>
+</table>
+
+<p>and a filter that will print messages before and after a service is run:</p>
+
+<table class="pre"><tr><td class="lines"><pre class="fssnip">
+<span class="l">1: </span>
+<span class="l">2: </span>
+</pre>
+</td>
+<td class="snippet"><pre class="fssnip">
+<span class="k">let</span> <span class="i">printBeforeAndAfterFilter</span> <span class="o">:</span> <span class="i">Filter</span><span class="o">&lt;</span><span onmouseout="hideTip(event, 'fs1', 5)" onmouseover="showTip(event, 'fs1', 5)" class="i">string</span>, <span onmouseout="hideTip(event, 'fs1', 6)" onmouseover="showTip(event, 'fs1', 6)" class="i">string</span><span class="o">&gt;</span> <span class="o">=</span> 
+    <span class="i">Filter</span><span class="o">.</span><span class="i">beforeAfterSync</span> (<span class="k">fun</span> _ <span class="k">-&gt;</span> <span onmouseout="hideTip(event, 'fs4', 7)" onmouseover="showTip(event, 'fs4', 7)" class="i">printfn</span> <span class="s">&quot;</span><span class="s">before</span><span class="s">&quot;</span>) (<span class="k">fun</span> _ <span class="k">-&gt;</span> <span onmouseout="hideTip(event, 'fs4', 8)" onmouseover="showTip(event, 'fs4', 8)" class="i">printfn</span> <span class="s">&quot;</span><span class="s">after</span><span class="s">&quot;</span>)</pre>
+</td>
+</tr>
+</table>
+
+<p>then, we can simply compose the two, and the messages will print before and after the service is invoked:</p>
+
+<table class="pre"><tr><td class="lines"><pre class="fssnip">
+<span class="l">1: </span>
+<span class="l">2: </span>
+</pre>
+</td>
+<td class="snippet"><pre class="fssnip">
+<span class="k">let</span> <span class="i">filteredEchoService</span> <span class="o">:</span> <span class="i">Service</span><span class="o">&lt;</span><span onmouseout="hideTip(event, 'fs1', 9)" onmouseover="showTip(event, 'fs1', 9)" class="i">string</span>, <span onmouseout="hideTip(event, 'fs1', 10)" onmouseover="showTip(event, 'fs1', 10)" class="i">string</span><span class="o">&gt;</span> <span class="o">=</span>
+        <span class="i">printBeforeAndAfterFilter</span> <span class="o">|&gt;</span> <span class="i">Filter</span><span class="o">.</span><span class="i">apply</span> <span class="i">echoService</span></pre>
+</td>
+</tr>
+</table>
+
+<p>This is clearly a very simple, intuitive, and effective way of handling filters.</p>
+
+<h3>Category Theory</h3>
+
+<p>And now, as a bonus for those of you who stuck with us this long: it happens that a filter is just a kleisli arrow specialized to the continuation monad.</p>
+
+<div class="tip" id="fs1">Multiple items<br />val string : value:&#39;T -&gt; string<br /><br />Full name: Microsoft.FSharp.Core.Operators.string<br /><br />--------------------<br />type string = System.String<br /><br />Full name: Microsoft.FSharp.Core.string</div>
+<div class="tip" id="fs2">val async : AsyncBuilder<br /><br />Full name: Microsoft.FSharp.Core.ExtraTopLevelOperators.async</div>
+<div class="tip" id="fs3">member AsyncBuilder.Return : value:&#39;T -&gt; Async&lt;&#39;T&gt;</div>
+<div class="tip" id="fs4">val printfn : format:Printf.TextWriterFormat&lt;&#39;T&gt; -&gt; &#39;T<br /><br />Full name: Microsoft.FSharp.Core.ExtraTopLevelOperators.printfn</div>
+
+
+              <h1 class="h2link"><a href="http://jet.github.io/FsBlog/blog/2015/03-22-on-how-jet-chose/index.html">On how Jet chose F#</a></h1>
+              <p class="view"><small>    <time datetime="2015-03-22T12:38:14" pubdate data-updated="true">Mar 22, 2015</time>
+</small><br /><h2>In the beginning</h2>
+
+<p>When Jet first started, we weren't sure if we wanted to use F# or C#. Most of our original developers had only C# experience and, despite the benefits you often hear about F# -- less code leading to fewer bugs, for example -- we weren't sure that would be enough. After all, we're building an e-commerce web site, and isn't web fully in the domain of C#? Plus, most of the developers on the team had an object-oriented or imperative background -- what if we wasted too much time figuring out this new language before we could even be productive?</p>
+
+<p>So, we started with two solutions: a C# solution and an F# solution, to see where they would take us. In the end, we chose to stick with the F# path. The main reason is that we were able to deliver the same functionality with far less code. This clearly eases maintainability and reduces bugs. If you've been part of the F# community for any length of time, you know that this is a very well known feature of F#, and a commonly cited reason to switch to F#. However, we had a few other unique to Jet reasons that we wanted to share.</p>
+
+
+</p>
+              <h1 class="h2link"><a href="http://jet.github.io/FsBlog/blog/2015/01-12-jet-sponsors-FSSF/index.html">Jet sponsors the F# Software Foundation!</a></h1>
+              <p class="view"><small>    <time datetime="2015-01-12T11:27:31" pubdate data-updated="true">Jan 12, 2015</time>
+</small><br /><h2>What is the F# Software Foundation?</h2>
+
+<p>The F# Software Foundation is a community-run non-profit Corporation that aims to promote and benefit the F# Programming Language. It began in 2012, and was organized formally into a non-profit in late 2014.</p>
+
+<p>For more information on the Foundation, including additional <a href="http://foundation.fsharp.org/history">history</a>, or to read the <a href="http://foundation.fsharp.org/">mission statement</a> and latest <a href="http://foundation.fsharp.org/board_meeting_minutes">board meeting minutes</a> of the F# Software Foundation, see the <a href="http://fsharp.org">fsharp.org</a> site.</p>
+
+
+</p>
+      </section>
+      <footer>
+        <p><small>Hosted on GitHub Pages</small></p>
+      </footer>
+    <script src="http://jet.github.io/FsBlog/javascripts/scale.fix.js"></script>
+  </body>
+</html>
