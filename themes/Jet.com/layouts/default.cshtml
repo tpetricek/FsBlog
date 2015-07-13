@@ -60,12 +60,8 @@
                   </p>
                     </leftpanel>
       <section>
-          @foreach (var post in Enumerable.Take(Model.Posts, 5))
-          {
-              <h1 class="h2link"><a href="@Model.Root/blog/@post.Url/index.html">@post.Title</a></h1>
-              <p class="view"><small>@PostDate(post.Date)</small><br />@post.Abstract</p>
-          }
-      </section>
+        @RenderBody()
+       </section>
       <footer>
         <p><small>Hosted on GitHub Pages</small></p>
       </footer>
