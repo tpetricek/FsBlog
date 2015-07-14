@@ -9,7 +9,7 @@
     @if (@post.Image != "") {
         @:<img src="@Model.Root/images/@post.Image" style="float:right;max-width:300px;max-height:300px;" />
     }
-    <p class="view"><small>@PostDate(post.Date) | @post.Author</small><br />@post.Abstract</p>
+    <p class="view"><small>@post.Author &nbsp;&nbsp;| &nbsp;&nbsp;@PostDate(post.Date)</small><br />@post.Abstract</p>
 
     <p><a href="@Model.Root/blog/@post.Url/index.html">Continue reading...</a></p>
     <hr />
