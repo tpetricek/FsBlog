@@ -6,8 +6,9 @@
 @foreach (var post in Enumerable.Take(Model.Posts, 5))
 {
     <h1 class="h2link"><a href="@Model.Root/blog/@post.Url/index.html">@post.Title</a></h1>
+    <img src="@Model.Root/images/@post.Image" style="float:right" />
     <p class="view"><small>@PostDate(post.Date)</small><br />@post.Abstract</p>
-    <p>
-        <a href="@Model.Root/blog/@post.Url/index.html">Continue reading...</a>
-    </p>
+
+    <p><a href="@Model.Root/blog/@post.Url/index.html">Continue reading...</a></p>
+    <hr />
 }
