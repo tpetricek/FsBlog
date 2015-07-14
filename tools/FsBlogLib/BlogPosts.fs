@@ -17,7 +17,9 @@ module BlogPosts =
       Description : string
       Date : System.DateTime
       Url : string
-      Tags : seq<string> }
+      Tags : seq<string> 
+      Image : string
+      Author : string}
 
   /// Get all *.cshtml, *.html, *.md and *.fsx files in the blog directory
   let GetBlogFiles blog = seq {
@@ -105,7 +107,9 @@ module BlogPosts =
           Abstract = abstr
           Description = lookup.["Description"]
           Tags = lookup.["Tags"].Split([|','|], System.StringSplitOptions.RemoveEmptyEntries) |> Array.map (fun s -> s.Trim() |> renameTag)
-          Date = lookup.["Date"] |> System.DateTime.Parse }
+          Date = lookup.["Date"] |> System.DateTime.Parse 
+          Image = lookup.["Image"]
+          Author = lookup.["Author"]}
       with _ -> failwithf "Invalid header in the following blog file: %s" file
 
   /// Loads information about all blog posts
@@ -127,6 +131,8 @@ module BlogPosts =
     Date = "%s";
     Tags = "";
     Description = "";
+    Image = "";
+    Author = "";
 }"""    layout title (date.ToString("yyyy-MM-ddThh:mm:ss"))
 
   let fsxHeader (date:System.DateTime) title = 
@@ -136,6 +142,8 @@ module BlogPosts =
     Date = "%s";
     Tags = "";
     Description = "";
+    Image = "";
+    Author = "";
 *)"""   title (date.ToString("yyyy-MM-ddThh:mm:ss"))
 
   // Creates a new markdown page.

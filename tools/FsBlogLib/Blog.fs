@@ -97,7 +97,9 @@ module Blog =
               XElement(!"guid", root + "/blog/" + item.Url),
               XElement(!"link", root + "/blog/" + item.Url + "/index.html"),
               XElement(!"pubDate", item.Date.ToUniversalTime().ToString("r")),
-              XElement(!"description", item.Abstract) ) |]
+              XElement(!"description", item.Abstract),
+              XElement(!"image", item.Image ),
+              XElement(!"author", item.Author ) ) |]
     let channel = 
       XElement
         ( !"channel",

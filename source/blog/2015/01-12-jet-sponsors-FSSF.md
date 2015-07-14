@@ -2,8 +2,10 @@
     Layout = "post";
     Title = "Jet sponsors the F# Software Foundation!";
     Date = "2015-01-12T11:27:31";
-    Tags = "";
+    Tags = "F#, Community";
     Description = "Jet sponsors the F# Software Foundation.";
+    Image = "balloons.jpg";
+	Author="Rachel Reese";
 }
 
 ## What is the F# Software Foundation?
@@ -17,5 +19,5 @@ Have you [become a member](http://foundation.fsharp.org/membership) yet?
 
 ## Why should Jet sponsor the F# Software Foundation? 
 
-We here at Jet have proudly embraced F# because of the many advantages we've experienced when working with the language. As soon we heard the F# Software Foundation was in the process of becoming a formal organization in order to more robustly support the F# language, we knew we wanted to encourage their endeavor however we could. Since one of our stated goals at Jet is to share the F# love, and to build the community as we expand, it was a natural fit! We learned this past week that Sponsor Levels had been determined and voted on, and we chose to sponsor at the Gold Level. We can't wait to see how the Foundation will grow.
+We here at Jet have proudly embraced F# because of the many advantages we've experienced when working with the language. As soon we heard the F# Software Foundation was in the process of becoming a formal organization in order to more robustly support the F# language, we knew we wanted to encourage their endeavor however we could. Since one of our stated goals at Jet is to **share the F# love**, and to build the community as we expand, it was a natural fit! We learned this past week that Sponsor Levels had been determined and voted on, and we chose to sponsor at the Gold Level. We can't wait to see how the Foundation will grow.
 

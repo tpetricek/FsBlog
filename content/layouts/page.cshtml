@@ -6,8 +6,11 @@
 @foreach (var post in Enumerable.Take(Model.Posts, 5))
 {
     <h1 class="h2link"><a href="@Model.Root/blog/@post.Url/index.html">@post.Title</a></h1>
-    <p class="view"><small>@PostDate(post.Date)</small><br />@post.Abstract</p>
-    <p>
-        <a href="@Model.Root/blog/@post.Url/index.html">Continue reading...</a>
-    </p>
+    @if (@post.Image != "") {
+        @:<img src="@Model.Root/images/@post.Image" style="float:right;max-width:300px;max-height:300px;" />
+    }
+    <p class="view"><small>@post.Author &nbsp;&nbsp;| &nbsp;&nbsp;@PostDate(post.Date)</small><br />@post.Abstract</p>
+
+    <p><a href="@Model.Root/blog/@post.Url/index.html">Continue reading...</a></p>
+    <hr />
 }
