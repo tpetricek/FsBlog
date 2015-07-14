@@ -3,13 +3,15 @@
 @{
     Layout = "default";
 }
-@foreach (var post in Enumerable.Take(Model.Posts, 5))
+@foreach (var post in Enumerable.Take(Model.Posts, 20))
 {
     <h1 class="h2link"><a href="@Model.Root/blog/@post.Url/index.html">@post.Title</a></h1>
     @if (@post.Image != "") {
         @:<img src="@Model.Root/images/@post.Image" style="float:right;max-width:300px;max-height:300px;" />
     }
-    <p class="view"><small>@post.Author &nbsp;&nbsp;| &nbsp;&nbsp;@PostDate(post.Date)</small><br />@post.Abstract</p>
+    <p class="view">
+        <small>@post.Author &nbsp;&nbsp;| &nbsp;&nbsp;@PostDate(post.Date) &nbsp;&nbsp;| &nbsp;&nbsp;@String.Join(", ", post.Tags)</small><br />
+    @post.Abstract</p>
 
     <p><a href="@Model.Root/blog/@post.Url/index.html">Continue reading...</a></p>
     <hr />

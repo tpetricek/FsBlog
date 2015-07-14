@@ -62,8 +62,12 @@
                       <li><a href="https://www.linkedin.com/vsearch/j?page_num=1&keywords=Jet%2Ecom&locationType=Y&f_C=5268907&trk=careers_promo_module_see_jobs">LinkedIn Jobs</a></li>
                       <li><a href="http://www.indeed.com/cmp/Jet.com-3">Indeed Listings</a></li>
                   </ul>
-                  <h2>Tags</h2>
-                    
+<!--                  <h2>Tags</h2>
+                    @foreach (var tag in Model.TaglyPosts)
+                    {
+                        <a href="@Model.Root/blog/tag/@tag.Item2/index.html">@tag.Item1</a>
+                    } 
+-->
                     </leftpanel>
       <section>
         @RenderBody()
