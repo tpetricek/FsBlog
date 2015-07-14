@@ -16,7 +16,8 @@
 
 
 </description>
-      <image>balloons.jpg</image>
+      <image></image>
+      <author>Rachel Reese</author>
     </item>
     <item>
       <title>Jet sponsors the F# Software Foundation!</title>
@@ -32,6 +33,7 @@
 
 </description>
       <image>balloons.jpg</image>
+      <author>Rachel Reese</author>
     </item>
   </channel>
 </rss>
