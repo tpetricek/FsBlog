@@ -4,15 +4,27 @@
     <link>http://jet.github.io/FsBlog</link>
     <description>This is the Jet Technology blog</description>
     <item>
+      <title>Jet's Tech Talk Weekly Series</title>
+      <guid>http://jet.github.io/FsBlog/blog/2015/07-14-tech-talk-weekly</guid>
+      <link>http://jet.github.io/FsBlog/blog/2015/07-14-tech-talk-weekly/index.html</link>
+      <pubDate>Tue, 14 Jul 2015 08:55:50 GMT</pubDate>
+      <description>&lt;p&gt;One lovely afternoon in mid-March, back in our Montclair, NJ offices, our awesome &lt;a href="http://extroverteddeveloper.com/"&gt;Jim Wallace&lt;/a&gt; took the initiative to start organizing weekly tech talks. Originally, we envisioned gathering to simply watch a conference video that we all wish we'd seen live.&lt;/p&gt;
+
+
+</description>
+      <image></image>
+      <author>Rachel Reese</author>
+    </item>
+    <item>
       <title>On how Jet chose F#</title>
       <guid>http://jet.github.io/FsBlog/blog/2015/03-22-on-how-jet-chose</guid>
       <link>http://jet.github.io/FsBlog/blog/2015/03-22-on-how-jet-chose/index.html</link>
       <pubDate>Sun, 22 Mar 2015 16:38:14 GMT</pubDate>
       <description>&lt;h2&gt;In the beginning&lt;/h2&gt;
 
-&lt;p&gt;When Jet first started, we weren't sure if we wanted to use F# or C#. Most of our original developers had only C# experience and, despite the benefits you often hear about F# -- less code leading to fewer bugs, for example -- we weren't sure that would be enough. After all, we're building an e-commerce web site, and isn't the web fully in the domain of C#? Plus, most of the developers on the team had an object-oriented or imperative background -- what if we wasted too much time figuring out this new language before we could even be productive?&lt;/p&gt;
+&lt;p&gt;The first Jet prototype was written by our CTO, Mike Hanrahan, in his basement, in WCF. After the first developers were brought on, the first proper version of our site was spun up with CoffeeScript. However, Mike knew from the outset that he wanted to use F#, at least for the pricing engine, because of the benefits you often hear about F#: less code leading to fewer bugs, as well as code that is more robust and safer because of the type system, to name a few. As a company, we weren't sure that we should have F# anywhere else, though. After all, we're building an e-commerce web site. Isn't the web fully in the domain of C#? Plus, many of the developers on the team had an object-oriented or imperative background -- what if we wasted too much time figuring out this new language before we could even be productive?&lt;/p&gt;
 
-&lt;p&gt;So, we started with two solutions: a C# solution and an F# solution, to see where they would take us. In the end, we chose to stick with the F# path. The main reason: we were able to deliver the same functionality with far less code. This clearly eases maintainability and reduces bugs. If you've been part of the F# community for any length of time, you know that this is a very well known feature of the language and a commonly cited reason to switch to F#. However, we had a few other unique-to-Jet reasons that we wanted to share.&lt;/p&gt;
+&lt;p&gt;So, we started building two solutions: a C# solution and an F# solution, to see where they would take us. In the end, we chose to stick with the F# path. The main reason: we were able to deliver the same functionality with far less code. This clearly eases maintainability and reduces bugs. If you've been part of the F# community for any length of time, you know that this is a very well known feature of the language and a commonly cited reason to switch to F#. However, we had a few other unique-to-Jet reasons that we wanted to share.&lt;/p&gt;
 
 
 </description>

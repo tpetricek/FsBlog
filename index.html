@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Welcome to Jet Technology</title>
+    <title>Technology</title>
     <link rel="stylesheet" href="http://jet.github.io/FsBlog/stylesheets/styles.css">
     <link rel="stylesheet" href="http://jet.github.io/FsBlog/stylesheets/pygment_trac.css">
     <link rel="shortcut icon" href="http://jet.github.io/FsBlog/images/favicon.ico">
@@ -20,34 +20,32 @@
     <script type="text/javascript">stLight.options({publisher: "81ce46a6-ba61-410c-bb73-5204cc8efed1", doNotHash: false, doNotCopy: false, hashAddressBar: true});</script>  </head>
   <body>
 	  <header>
-        <div class="logo">
-            <a href="http://jet.github.io/FsBlog/index.html"><img src="http://jet.github.io/FsBlog/images/jet_logo.png" /></a>
-            <br />
-            <h3>Welcome to Jet Technology</h3>
-        </div>
-        <div class="social">
-            <ul>
-                <li>
-                    <a href="https://twitter.com/jettechnology"></a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/jet"></a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/jet"></a>
-                </li>
-                <li>
-                    <a href="https://www.github.com/jet"></a>
-                </li>
-                <li>
-                    <a href="https://linkedin.com/company/jet-com"></a>
-                </li>
-                <li>
-                    <a href="https://plus.google.com/118328800025960082059/posts"></a>
-                </li>
-            </ul>
-            <br />
-            <p class="sitelink"><a href="http://jet.com">visit Jet.com</a></p>
+        <div>
+            <a href="http://jet.github.io/FsBlog/index.html"><img src="http://jet.github.io/FsBlog/images/jet_logo.png" style="max-height:50px;" /></a><span class="subtitle">Technology</span>
+            <div class="social">
+                <ul>
+                    <li>
+                        <a class="social-icons" href="https://twitter.com/jettechnology"></a>
+                    </li>
+                    <li>
+                        <a class="social-icons" href="https://twitter.com/jet"></a>
+                    </li>
+                    <li>
+                        <a class="social-icons" href="https://www.facebook.com/jet"></a>
+                    </li>
+                    <li>
+                        <a class="social-icons" href="https://www.github.com/jet"></a>
+                    </li>
+                    <li>
+                        <a class="social-icons" href="https://linkedin.com/company/jet-com"></a>
+                    </li>
+                    <li>
+                        <a class="social-icons" href="https://plus.google.com/118328800025960082059/posts"></a>
+                    </li>
+                </ul>
+                <br />
+                <p class="sitelink"><a class="social-icons" href="http://jet.com">visit Jet.com</a></p>
+            </div>
         </div>
       </header>
           <leftpanel>
@@ -60,19 +58,29 @@
                   </ul>
 <!--                  <h2>Tags</h2>
                         <a href="http://jet.github.io/FsBlog/blog/tag/fsharp/index.html">f#</a>
+                        <a href="http://jet.github.io/FsBlog/blog/tag/learning/index.html">learning</a>
                         <a href="http://jet.github.io/FsBlog/blog/tag/community/index.html">community</a>
 -->
                     </leftpanel>
       <section>
         
+    <h1 class="h2link"><a href="http://jet.github.io/FsBlog/blog/2015/07-14-tech-talk-weekly/index.html">Jet's Tech Talk Weekly Series</a></h1>
+    <p class="view">
+        <small>Rachel Reese &nbsp;&nbsp;| &nbsp;&nbsp;    <time datetime="2015-07-14T04:55:50" pubdate data-updated="true">Jul 14, 2015</time>  &nbsp;&nbsp;| &nbsp;&nbsp;learning</small><br />
+    <p>One lovely afternoon in mid-March, back in our Montclair, NJ offices, our awesome <a href="http://extroverteddeveloper.com/">Jim Wallace</a> took the initiative to start organizing weekly tech talks. Originally, we envisioned gathering to simply watch a conference video that we all wish we'd seen live.</p>
+
+
+</p>
+    <p><a href="http://jet.github.io/FsBlog/blog/2015/07-14-tech-talk-weekly/index.html">Continue reading...</a></p>
+    <hr />
     <h1 class="h2link"><a href="http://jet.github.io/FsBlog/blog/2015/03-22-on-how-jet-chose/index.html">On how Jet chose F#</a></h1>
     <p class="view">
         <small>Rachel Reese &nbsp;&nbsp;| &nbsp;&nbsp;    <time datetime="2015-03-22T12:38:14" pubdate data-updated="true">Mar 22, 2015</time>  &nbsp;&nbsp;| &nbsp;&nbsp;f#</small><br />
     <h2>In the beginning</h2>
 
-<p>When Jet first started, we weren't sure if we wanted to use F# or C#. Most of our original developers had only C# experience and, despite the benefits you often hear about F# -- less code leading to fewer bugs, for example -- we weren't sure that would be enough. After all, we're building an e-commerce web site, and isn't the web fully in the domain of C#? Plus, most of the developers on the team had an object-oriented or imperative background -- what if we wasted too much time figuring out this new language before we could even be productive?</p>
+<p>The first Jet prototype was written by our CTO, Mike Hanrahan, in his basement, in WCF. After the first developers were brought on, the first proper version of our site was spun up with CoffeeScript. However, Mike knew from the outset that he wanted to use F#, at least for the pricing engine, because of the benefits you often hear about F#: less code leading to fewer bugs, as well as code that is more robust and safer because of the type system, to name a few. As a company, we weren't sure that we should have F# anywhere else, though. After all, we're building an e-commerce web site. Isn't the web fully in the domain of C#? Plus, many of the developers on the team had an object-oriented or imperative background -- what if we wasted too much time figuring out this new language before we could even be productive?</p>
 
-<p>So, we started with two solutions: a C# solution and an F# solution, to see where they would take us. In the end, we chose to stick with the F# path. The main reason: we were able to deliver the same functionality with far less code. This clearly eases maintainability and reduces bugs. If you've been part of the F# community for any length of time, you know that this is a very well known feature of the language and a commonly cited reason to switch to F#. However, we had a few other unique-to-Jet reasons that we wanted to share.</p>
+<p>So, we started building two solutions: a C# solution and an F# solution, to see where they would take us. In the end, we chose to stick with the F# path. The main reason: we were able to deliver the same functionality with far less code. This clearly eases maintainability and reduces bugs. If you've been part of the F# community for any length of time, you know that this is a very well known feature of the language and a commonly cited reason to switch to F#. However, we had a few other unique-to-Jet reasons that we wanted to share.</p>
 
 
 </p>
