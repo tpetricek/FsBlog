@@ -8,7 +8,9 @@
       <guid>http://jet.github.io/FsBlog/blog/2015/07-14-tech-talk-weekly</guid>
       <link>http://jet.github.io/FsBlog/blog/2015/07-14-tech-talk-weekly/index.html</link>
       <pubDate>Tue, 14 Jul 2015 08:55:50 GMT</pubDate>
-      <description>&lt;p&gt;One lovely afternoon in mid-March, back in the old days of Jet (i.e., when we were still located in our Montclair, NJ offices) our awesome &lt;a href="http://extroverteddeveloper.com/"&gt;Jim Wallace&lt;/a&gt; took the initiative to start organizing weekly tech talks. Originally, we envisioned gathering to simply watch a conference video that we all wish we'd seen live. We took a quick vote on Slack, and decided that our inaugural video would be Bart de Smet's &lt;a href="http://www.infoq.com/presentations/cloud-rx"&gt;Cloud-scale Event Processing using Rx.&lt;/a&gt;. We even threw in some company-sponsored pizza to make it more fun! ;-)&lt;/p&gt;
+      <description>&lt;p&gt;One lovely afternoon in mid-March, back in the old days of Jet (i.e., when we were still located in our Montclair, NJ offices) our awesome &lt;a href="http://extroverteddeveloper.com/"&gt;Jim Wallace&lt;/a&gt; took the initiative to start organizing weekly tech talks. Originally, we had envisioned gathering to simply watch a conference video that we all wish we'd seen live. We took a quick vote on Slack, and it was decided that our inaugural video would be Bart de Smet's &lt;a href="http://www.infoq.com/presentations/cloud-rx"&gt;Cloud-scale Event Processing using Rx.&lt;/a&gt;. We even threw in some company-sponsored pizza to make it more fun! ;-)&lt;/p&gt;
+
+&lt;p&gt;As we continued selecting videos, Jim whipped up a submission and voting site on Azure to figure out each week's videos. We aimed for a mix of topics, focusing on F# (of course!), DDD, Event-processing, and microservices.&lt;/p&gt;
 
 
 </description>
