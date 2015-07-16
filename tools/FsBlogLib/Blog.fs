@@ -49,7 +49,7 @@ module Blog =
                 select (year, uk.DateTimeFormat.GetMonthName(month), g :> seq<_>) }
         |> Array.ofSeq
       Root = root.Replace('\\', '/') 
-      Title = "Welcome to Jet Technology"
+      Title = "Technology"
       }
 
   let TransformFile template hasHeader (razor:FsBlogLib.Razor) prefix current target =     
