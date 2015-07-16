@@ -12,8 +12,10 @@
 
 @font-face {
     font-family: 'Graphik';
-    src: url('/FsBlog/fonts/graphik/Graphik-Light.otf') format('opentype');
-    src: url('/FsBlog/fonts/graphik/Graphik-LightItalix.otf') format('opentype');
+    src: url('/FsBlog/fonts/graphik/Graphik-Light.otf') format('opentype'), 
+         url('/FsBlog/fonts/graphik/Graphik-Regular.otf') format('opentype'),
+         url('/FsBlog/fonts/graphik/Graphik-RegularItalic.otf') format('opentype'),
+         url('/FsBlog/fonts/graphik/Graphik-LightItalic.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -21,7 +23,7 @@
 body {
   padding:0px;
   margin:0px;
-  font:15px/1.5 Graphik, OpenSans;
+  font:15px/1.5 Graphik-Light, OpenSans;
   font-family:Graphik, OpenSans;
   color:#777;
   background-color: white;
@@ -42,11 +44,7 @@ h1, h2, h3, .falseheader {
 }
 
 h1, .falseheader {
-  font-size:28px;
-}
-
-.h2link {
-  margin-top:40px;
+  font-size:39px;
 }
 
 h2 {
@@ -181,7 +179,7 @@ hr {
   border:0;
   background:#F7F7F7;
   height:2px;
-  margin:0 0 20px;
+  margin:0 0 40px;
 }
 
 footer {
