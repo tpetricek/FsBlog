@@ -1,12 +1,12 @@
 <rss version="2.0">
   <channel>
     <title>Welcome to Jet Tech blog.</title>
-    <link>http://jet.github.io/FsBlog</link>
+    <link>http://techgroup.jet.com/</link>
     <description>This is the Jet Technology blog</description>
     <item>
       <title>Jet's Tech Talk Weekly Series</title>
-      <guid>http://jet.github.io/FsBlog/blog/2015/07-14-tech-talk-weekly</guid>
-      <link>http://jet.github.io/FsBlog/blog/2015/07-14-tech-talk-weekly/index.html</link>
+      <guid>http://techgroup.jet.com//blog/2015/07-14-tech-talk-weekly</guid>
+      <link>http://techgroup.jet.com//blog/2015/07-14-tech-talk-weekly/index.html</link>
       <pubDate>Tue, 14 Jul 2015 08:55:50 GMT</pubDate>
       <description>&lt;p&gt;One lovely afternoon in mid-March, back in the old days of Jet (i.e., when we were still located in our Montclair, NJ offices) our awesome &lt;a href="http://extroverteddeveloper.com/"&gt;Jim Wallace&lt;/a&gt; took the initiative to start organizing weekly tech talks. Originally, we had envisioned gathering to simply watch a conference video that we all wish we'd seen live. We took a quick vote on Slack, and it was decided that our inaugural video would be Bart de Smet's &lt;a href="http://www.infoq.com/presentations/cloud-rx"&gt;Cloud-scale Event Processing using Rx.&lt;/a&gt;. We even threw in some company-sponsored pizza to make it more fun! ;-)&lt;/p&gt;
 
@@ -19,8 +19,8 @@
     </item>
     <item>
       <title>On how Jet chose F#</title>
-      <guid>http://jet.github.io/FsBlog/blog/2015/03-22-on-how-jet-chose</guid>
-      <link>http://jet.github.io/FsBlog/blog/2015/03-22-on-how-jet-chose/index.html</link>
+      <guid>http://techgroup.jet.com//blog/2015/03-22-on-how-jet-chose</guid>
+      <link>http://techgroup.jet.com//blog/2015/03-22-on-how-jet-chose/index.html</link>
       <pubDate>Sun, 22 Mar 2015 16:38:14 GMT</pubDate>
       <description>&lt;h2&gt;In the beginning&lt;/h2&gt;
 
@@ -35,8 +35,8 @@
     </item>
     <item>
       <title>Jet sponsors the F# Software Foundation!</title>
-      <guid>http://jet.github.io/FsBlog/blog/2015/01-12-jet-sponsors-FSSF</guid>
-      <link>http://jet.github.io/FsBlog/blog/2015/01-12-jet-sponsors-FSSF/index.html</link>
+      <guid>http://techgroup.jet.com//blog/2015/01-12-jet-sponsors-FSSF</guid>
+      <link>http://techgroup.jet.com//blog/2015/01-12-jet-sponsors-FSSF/index.html</link>
       <pubDate>Mon, 12 Jan 2015 16:27:31 GMT</pubDate>
       <description>&lt;h2&gt;What is the F# Software Foundation?&lt;/h2&gt;
 
