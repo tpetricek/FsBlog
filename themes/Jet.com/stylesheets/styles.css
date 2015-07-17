@@ -55,7 +55,6 @@ a {
   font-weight:400;
   text-decoration:none;
   display:inline-flex;
-  vertical-align:middle;
 }
 
 a small {
@@ -135,6 +134,7 @@ header {
     font-weight:200;
     font-size:24px;
     color:white;
+    vertical-align:middle;
 }
 
 leftpanel {
