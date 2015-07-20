@@ -67,4 +67,4 @@ This is clearly a very simple, intuitive, and effective way of handling filters.
 
 And now, as a bonus for those of you who stuck with us this long: it happens that a filter is just a kleisli arrow specialized to the continuation monad.
 
-![]()
+![Monads. Monads everywhere.](/images/monads-everywhere.jpg)
